@@ -46,7 +46,7 @@ ifeq ($(SSE), INC)
 endif
 
 # Include library
-LIB_PATH = C:/src/mylib/ToolsLib
+LIB_PATH = ../lib/ToolsLib
 LIB_DEPEND = ToolsLib
 
 # Include SFML
