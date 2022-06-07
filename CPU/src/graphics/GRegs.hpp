@@ -1,0 +1,46 @@
+//#define RG(Name)
+
+    RG(CS)
+    RG(DS) 
+    RG(SS)
+    RG(MS)
+    
+    RG(IP)
+    RG(SP)
+    RG(BP)
+
+    RG(SI)
+    RG(DI) 
+    
+    RG(AX) 
+    RG(BX)
+    RG(CX)
+    RG(DX)
+    
+    RG(R8)
+    RG(R9)
+    RG(R10)
+    RG(R11)
+    RG(R12)
+    RG(R13)
+    RG(R14)
+    RG(R15)
+
+    RG(YMM0)
+    RG(YMM1)
+    RG(YMM2)
+    RG(YMM3)
+    RG(YMM4)
+    RG(YMM5) 
+    RG(YMM6) 
+    RG(YMM7)
+    RG(YMM8) 
+    RG(YMM9) 
+    RG(YMM10) 
+    RG(YMM11) 
+    RG(YMM12) 
+    RG(YMM13) 
+    RG(YMM14) 
+    RG(YMM15)
+
+#undef RG
