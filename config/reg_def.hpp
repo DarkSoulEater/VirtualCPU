@@ -1,0 +1,100 @@
+// #define DEF_REG(Name, Num, Size, Access)
+
+
+// SEGMENT
+DEF_REG(CS, 0, 64, 0)
+
+DEF_REG(DS, 1, 64, 0)
+
+DEF_REG(SS, 2, 64, 0)
+
+DEF_REG(MS, 3, 64, 0)
+
+DEF_REG(VS, 4, 64, 1)
+
+// POINTER
+DEF_REG(IP, 5, 64, 0)
+
+DEF_REG(SP, 6, 64, 0)
+
+DEF_REG(BP, 7, 64, 0)
+
+// Index Registers
+DEF_REG(SI, 8, 64, 1)
+
+DEF_REG(DI, 9, 64, 1)
+
+// Access Registers
+DEF_REG(AX, 10, 64, 1)
+
+DEF_REG(BX, 11, 64, 1)
+
+DEF_REG(CX, 12, 64, 1)
+
+DEF_REG(DX, 13, 64, 1)
+
+// Control Registers
+
+DEF_REG(ZF, 14, 1, 0)
+DEF_REG(OF, 14, 1, 0)
+DEF_REG(SF, 14, 1, 0)
+DEF_REG(AF, 14, 1, 0)
+DEF_REG(EF, 14, 1, 0)
+DEF_REG(GF, 14, 1, 0)
+DEF_REG(LF, 14, 1, 0)
+
+DEF_REG(ER3, 14, 64 - 7, 0)
+
+// Integer Registers
+
+DEF_REG(R8, 15, 64, 1)
+
+DEF_REG(R9, 16, 64, 1)
+
+DEF_REG(R10, 17, 64, 1)
+
+DEF_REG(R11, 18, 64, 1)
+
+DEF_REG(R12, 19, 64, 1)
+
+DEF_REG(R13, 20, 64, 1)
+
+DEF_REG(R14, 21, 64, 1)
+
+DEF_REG(R15, 22, 64, 1)
+
+
+// Doble Registers
+DEF_REG(YMM0, 23, 64, 1)
+
+DEF_REG(YMM1, 24, 64, 1)
+
+DEF_REG(YMM2, 25, 64, 1)
+
+DEF_REG(YMM3, 26, 64, 1)
+
+DEF_REG(YMM4, 27, 64, 1)
+
+DEF_REG(YMM5, 28, 64, 1)
+
+DEF_REG(YMM6, 29, 64, 1)
+
+DEF_REG(YMM7, 30, 64, 1)
+
+DEF_REG(YMM8, 31, 64, 1)
+
+DEF_REG(YMM9, 32, 64, 1)
+
+DEF_REG(YMM10, 33, 64, 1)
+
+DEF_REG(YMM11, 34, 64, 1)
+
+DEF_REG(YMM12, 35, 64, 1)
+
+DEF_REG(YMM13, 36, 64, 1)
+
+DEF_REG(YMM14, 37, 64, 1)
+
+DEF_REG(YMM15, 38, 64, 1)
+
+#undef DEF_REG
