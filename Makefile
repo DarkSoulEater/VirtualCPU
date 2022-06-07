@@ -24,8 +24,10 @@ CPU:
 	CPU/build-debug/CPU.exe $(addprefix $(FILE), .bt)
 
 init:
-	$(MAKE) init -C CPU
-	$(MAKE) init -C ASM
+	if not exist ASM/$(BIN_DIR)    md ASM/$(BIN_DIR)
+	if not exist ASM/$(BUILD_PATH) md ASM/$(BUILD_PATH)
+	if not exist CPU/$(BIN_DIR)    md CPU/$(BIN_DIR)
+	if not exist CPU/$(BUILD_PATH) md CPU/$(BUILD_PATH)
 
 clean:
 	if exist $(BIN_DIR) rmdir /S /Q $(BIN_DIR)
